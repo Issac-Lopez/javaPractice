@@ -1,0 +1,84 @@
+/**
+ * Purpose of this project is to create a simple arithmetic calculator.
+ * 
+ * @Author Issac Lopez
+ * @Date October 27, 2021
+ */
+
+public class Calculator {
+  
+  /**
+   * The main method instantiates a new object from the Calculator class 
+   * and outputs the given methods below in integer form.
+   * 
+   * @param args
+   */
+  public static void main(String[] args) {
+    Calculator myCalculator = new Calculator();
+    System.out.println(myCalculator.add(5,7));
+    System.out.println(myCalculator.subtract(45,11));
+    System.out.println(myCalculator.multiply(5,6));
+    System.out.println(myCalculator.divide(40, 10));
+    System.out.println(myCalculator.modulo(20, 6));
+  }
+
+  /**
+   * This method takes two integers and adds them.
+   * 
+   * @param a first integer to be added
+   * @param b second integer to be added
+   * @return two integers added together
+   */
+  public int add(int a, int b) {
+    int c = a + b;
+    return c;
+  }
+
+  /**
+   * This method takes two integers and subtracts them.
+   * 
+   * @param a first integer to be subtracted
+   * @param b second integer to be subtracted
+   * @return two integers subtracted from each other
+   */
+  public int subtract(int a, int b) {
+    int c = a - b;
+    return c;
+  }
+
+  /**
+   * This method takes two integers and multplies them.
+   * 
+   * @param a first integer to be multiplied
+   * @param b second integer to be multiplied
+   * @return two integers multiplied together
+   */
+  public int multiply(int a, int b) {
+    int c = a * b;
+    return c;
+  }
+  
+  /**
+   * This method takes two integers and divides them.
+   * 
+   * @param a first integer to be divided
+   * @param b second integer to be divided
+   * @return two integers divided together
+   */
+  public int divide(int a, int b) {
+    int c = a / b;
+    return c;
+  }
+
+  /**
+   * This method takes two integers and finds the modulos of them.
+   * 
+   * @param a first integer
+   * @param b second integer to find modulo
+   * @return two integers modulo to find the remainder
+   */
+  public int modulo(int a, int b) {
+    int c= a % b;
+    return c;
+  }
+}

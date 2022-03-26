@@ -70,9 +70,9 @@ public class TransitCalculator {
   }
 
   /**
+   * Find the best fare to take.
    * 
-   * 
-   * @return
+   * @return fare to buy and how much it will cost per ride
    */
   public String getBestFare() {
     double[] ridePrices = getRidePrices();

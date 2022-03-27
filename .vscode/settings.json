@@ -6,6 +6,7 @@
     "BuildDroid",
     "ContinetsAndCities",
     "BestFareCalculator",
-    "DNASequencing"
+    "DNASequencing",
+    "PrimeDirective"
   ]
 }

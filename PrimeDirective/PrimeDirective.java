@@ -28,10 +28,10 @@ public class PrimeDirective {
   }
 
   /**
-   * This method returns the prime numbers into an ArrayList.
+   * This method returns the prime numbers into a List.
    * 
    * @param numbers an array of integers
-   * @return an ArrayList of integers
+   * @return a List of integers
    */
   public List<Integer> onlyPrimes(int[] numbers) {
     ArrayList<Integer> primes = new ArrayList<>();
@@ -43,6 +43,38 @@ public class PrimeDirective {
     return primes;
   }
 
+  /**
+   * This method returns the even numbers into a List.
+   * 
+   * @param numbers an array of integers
+   * @return an List of integers
+   */
+  public List<Integer> evenList(int[] numbers) {
+    ArrayList<Integer> evens = new ArrayList<>();
+    for (int number : numbers) {
+      if (number % 2 == 0) {
+        evens.add(number);
+      }
+    }
+    return evens;
+  }
+
+  /**
+   * This method returns the odd numbers into a List.
+   * 
+   * @param numbers an array of integers
+   * @return an List of integers
+   */
+  public List<Integer> oddList(int[] numbers) {
+    ArrayList<Integer> odds = new ArrayList<>();
+    for (int number : numbers) {
+      if (number % 2 != 0) {
+        odds.add(number);
+      }
+    }
+    return odds;
+  }
+
   // Main method.
   public static void main(String[] args) {
     PrimeDirective pd = new PrimeDirective();
@@ -52,6 +84,8 @@ public class PrimeDirective {
     System.out.println(pd.isPrime(28));
     System.out.println(pd.isPrime(2));
     System.out.println(pd.isPrime(5));
-    System.out.println(pd.onlyPrimes(numbers));
+    System.out.println("Only Primes List: " + pd.onlyPrimes(numbers));
+    System.out.println("Only Odds List: " + pd.oddList(numbers));
+    System.out.println("Only Evens List: " + pd.evenList(numbers));
   }
 }
